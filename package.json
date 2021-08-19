@@ -1,0 +1,14 @@
+{
+  "name": "http5201-assign4-smital",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "sass": "^1.37.5",
+    "vite": "^2.4.4"
+  }
+}

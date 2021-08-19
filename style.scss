@@ -1,0 +1,25 @@
+$alignment : center;
+$font-color : black;
+
+#title {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: $alignment;
+  color: $font-color;
+  margin-top: 60px;
+}
+
+#first , #second , #third {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: $alignment;
+  color: $font-color;
+  margin-top: 30px;
+  font-size: larger;
+}
+
+body{
+  background-color:lightcoral;
+}
