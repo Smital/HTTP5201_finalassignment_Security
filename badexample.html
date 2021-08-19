@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bad Example</title>
+    </head>
+    <body>
+       <div>
+           <h1>Sensitive data exposure</h1>
+           <p>Sensitive data such as credit card information and user passwords should never travel or be stored unencrypted, 
+               and passwords should always be hashed.Sensitive data exposure occurs as a result of not protecting a 
+               database where information is stored. </p>
+          <p>Sensitive data can be found stored in plain text documents.If websites do not use SSL and do not have HTTPS security on web pages 
+              that store information, data may be at risk of being exposed.</p>
+          <p>For example the website https://app.photobucket.com is not as much secure because if we login to the website using username and password
+             by not using the POST method to transfer data and not using the proper encryption method,the password is sotred as a plain text,
+             and any malicious user can see the password in the URL like https://app.photobucket.com/u/Smital123456?register=true.Morover,the password can also 
+             seen in the memory tab of the dev tools which is not acceptable.
+          </p>
+          <p>The http headers are not properly defined as some of them are missing which is not good practice to make a securing website.Header such as Strict-Transport-Security is not set which ensures that visiting web browser that the current site
+               is not HTTPS-only.</p>
+       </div>
+       
+    </body>
+</html>

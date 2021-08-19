@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quality Assurance</title>
+      <script type="module" crossorigin src="/assets/qa.c7f23080.js"></script>
+  </head>
+    <body>
+        <div>
+            <h1>Version Control</h1>
+            <p>Version control is known as source control and it is the practice of tracking and managing changes to software code.
+                Version control software keeps track of every modification to the code in a special kind of database.If a mistake is made, 
+                developers can turn back the clock and compare earlier versions of the code to help fix the mistake while
+                minimizing disruption to all team members.One developer from the team may be working on a new feature while another 
+                developer fixes bugs by changing code, each developer may make their changes in several parts of the file tree.Version control 
+                helps teams solve these kinds of problems,tracking every individual change and reduces the conflicts.
+            </p>
+            <p>There are different types of version control software is available such as
+                <ul>
+                    <li>Bitbucket</li>
+                    <li>Git</li>
+                </ul>
+            </p>
+            <p>Here I am using the Git version control system for this assignment.First to work with git,repository plays an important role.
+              Git repository is is a software project that uses git to keep track of its changes.There are two repos which are local and remote.
+              The copy of a project is stored on local machine called local repos and the copy of a project stored on server is called remote repo.
+              Below are the commands which are used to create and stored the project files.
+              <ul>
+                  <li><b>git init</b> : To intialise the repository.</li>
+                  <li><b>git add .</b>: This command will add the files</li>
+                  <li><b>git commit -m "message"</b>: This command will commit the all the files with message</li>
+                  <li><b>git remote add origin 'your_url_name'</b>: URL will consist of a path of a git. </li>
+                  <li><b>git push -u origin maste</b> : Used for pushing local content to GitHub.</li>
+              </ul>
+            </p>
+        </div>
+        <div>
+            <h1>Git Branching Model</h1>
+            <p>Git allows us to split off temporarily from the existing repo, do our work, and push it to the remote repository
+                 without it affecting other developers.Then merge your work back into the main branch./p>
+            <p>Below are the commance to creazte a branch repo and push it to the main branch.</p>
+              <ul>
+                  <li><b>git branch [some-name-for-your-branch]</b> : To create a feature branch</li>
+                  <li><b>git branch -list</b>: It shows all the branches.</li>
+                  <li><b>git checkout [some-name-for-your-branch]</b>: THis command allows us to move to the new created feature branch</li>
+                  <li><b>git push -u origin [some-name-for-your-branch]</b>: It will push our code to the remote main branch</li>
+              </ul>
+            </p>
+        </div>
+        <div>
+            <h1>Code linting</h1>
+            <p>A linter is a tool that programmatically scans your code with the goal of finding issues that can lead to bugs.It
+            will flagging bugs in your code from syntax errors , giving warnings and providing suggestions for common best practices.
+            </p>
+            <p>Example :</p>
+            <p>const test = 'I am a test';
+               console.log('text');
+               const test = 'Another one';
+            </p>
+            <p>We are declaring the constant test twice,which our javascript engine will not accept. Instead of getting 
+                caught later as an error when the code runs, it will immediately get an error through the linter running in the
+                background</p>
+        </div>
+        <div>
+            <h1>Code standards</h1>
+            <p>Coding standards are made up of anything that the team wants.</p>
+            <p>Coding Principles</p>
+            <p>One variable per declaration, for example, Every local variable declaration declares only one variable: 
+                declarations such as let a = 1, b = 2; are not used.</p>
+            <p>Dont use the duplicate names and use the camel casing for ids.In camel casing, the first word is all lower case, and subsequent
+                 words begin with an upper case letter, with no space between the words.</p>
+            <p><b><span id="myFirstPage"></span></b></p>
+            <p>Naming convention rules are
+                No upper case
+                No spaces
+                No non-alphanumeric characters other than periods, underscores (_) or hyphens (-)</p>
+        </div>
+        <div>
+            <h1>End-to-End Testing</h1>
+            <p>It is a software testing method that validates entire software from starting to the end along with its integration with 
+                external interfaces</p>
+            <p>End to End Testing Design framework consists of three parts</p>
+            <ul>
+                <li>Build user functions : List the input data, action and the output data for each feature 
+                    identify the relationships between the functions</li>
+                <li>Build Conditions : Building a set of conditions for each user function defined</li>
+                <li>Build Test Cases : Build one or more test cases for each scenario </li>
+            </ul>
+              <p>For Example : When login into bank account and transfer some money to another account from some other bank.
+                <ul>
+                    <li>Login into the banking system</li>
+                    <li>Check for the balance in the account</li>
+                    <li>Transfer some  amount from one account to some other bank account</li>
+                    <li>Check latest account balance</li>
+                    <li>Logout of the application</li>
+               </ul>
+            </p>
+            </div>
+            <div>
+                <h1>Ad hoc Testing Tools</h1>
+                <p>Adhoc testing is usually performed to break the system an it does not have any test design technique and documentation to create test cases.Modern 
+                    dev tools is used for ad hoc testing.</p>
+                <p>The Lighthouse and axe auditing tools are important for quickly identifying opportunities to improve load times, SEO and accessibility.</p>
+                <p>Device emulation and responsive testing make checking CSS breakpoints.</p>
+                <p>Link checking : Checking that there are no broken links on the page.Link Checker is a great Chrome plugin for verifying that the 
+                   links on the page are not broken</p>
+            </div>
+            <div>
+                <h1>Build Tools and Deployment pipeline.</h1>
+                <p>Build tools are supposed to save development time and make life easier and similarly try to automate actions that a developer would otherwise
+                     have to do manually.Here is a short list of automations that build tools can solve:</p>
+                <ul>
+                    <li>Minification: Removing unnecessary whitespace in HTML, CSS and JS, and potentially renaming JS variables and functions with shorter names.</li>
+                    <li>Image optimization: Squashing jpegs, pngs, gifs and svgs</li>
+                    <li>Rewriting file paths:Changing localhost:8000/assets/images/hero-image.jpg to mydomain.com/images/hero-image.jpg</li>
+                    <li>Compiling code :SASS will you to make CSS easier</li>
+                    <li>Bundling : It packs together all your modules, including the production dependencies from node_modules, 
+                        and delivers them to the user in a single file without you having to worry about browser support.</li>    
+                </ul>
+            </div>
+            <div>
+                <h1>Unit Testing</h1>
+                <p>UNIT TESTING is a type of software testing where individual units or components of a software are tested. Unit testing is a 
+                    WhiteBox testing technique that is usually performed by the developer.</p>
+                <p>In order to do Unit Testing, we need to write a section of code to test a specific function in software application.
+                    Unit testing is commonly automated but may still be performed manually. 
+                </p>
+                <p>Mocha is an open-source project that was started ten years ago by a developer from Victoria, British Columbia</p>
+            </div>
+    </body>
+</html>

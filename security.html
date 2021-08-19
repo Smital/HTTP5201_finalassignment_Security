@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quality Assurance</title>
+    </head>
+    <body>
+        <div>
+            <h1>HTTP headers</h1>
+            <p>The headers contain information about the conversation being had between the client and server.HTTP headers
+                 can set powerful rules about security.
+            </p>
+            <p>Headers can be grouped according to their contexts</p>
+            <ul>
+                <li>Request headers : It contain more information about the resource to be fetched,
+                    or about the client requesting the resource</li>
+                <li>Response headers : It holds additional information about the response,
+                     like its location or about the server providing it.</li>
+                <li>Representation headers : contain information about the body of the resource</li>
+                <li>Payload headers : contain representation-independent information about payload data,
+                     including content length and the encoding used for transport.</li>
+            </ul>
+            <p>Request Headers</p>
+            <ul>
+                <li>From: In Internet mail format, this gives the name of the requesting user. This field may be used for
+                     logging purposes and an insecure form of access protection</li>
+                <li>Accept: This field contains a semicolon-separated list of representation schemes</li>
+                <li>Accept-Encoding: Similar to Accept, but lists the Content-Encoding types which are acceptable in the response.</li>
+                <li>Accept-Language: Similar to Accept, but lists the Language values which are preferable in the response. 
+                    A response in an unspecifies language is not illegal. </li>
+                <li>User-Agent: This line if present gives the software program used by the original client. This is for statistical purposes and
+                     the tracing of protocol violations. It should be included. The first white space delimited word must be the software product name, 
+                    with an optional slash and version designator. Other products which form part of the user agent may be put as separate words.</li>
+                <li>Referer:This optional header field allows the client to specify, for the server's benefit, the address ( URI ) of the document </li>    
+                <li>Authorization: If this line is present it contains authorization information.</li>
+            </ul>
+            <p>Response Headers</p>
+            <ul>
+                <li>Age: The Age header contains the time in seconds the object has been in a proxy cache.Example : Age: 24 ,A non-negative integer, representing time in 
+                    seconds the object has been in a proxy cache.</li>
+                <li>Location : The Location response header indicates the URL to redirect a page to. It only provides a
+                     meaning when served with a 3xx (redirection) or 201 (created) status response. For Example : Location: url . A relative or absolute URL.</li>
+               
+            </ul>
+            <p>Representation Headers</p>
+            <ul>
+                <li>Content-Type: The Content-Type representation header is used to indicate the original media type of the resource</li>
+                <li>Content-Encoding : The Content-Encoding representation header lists any encodings that have been applied
+                     to the representation (message payload), and in what order.Content encoding is mainly used to compress the message
+                    data without losing information about the origin media type.</li>
+            </ul>
+            <p>Payload Headers</p>
+            <ul>
+                <li>Payload header: A payload header is an HTTP header that describes the payload information related to safe transport and reconstruction of the original resource representation, 
+                    from one or more messages.This includes information like the length of the message payload,</li>
+                <li>Content-Length : The Content-Length header indicates the size of the message body, in bytes, sent to the recipient.</li>
+                <li>Content-Range : The Content-Range response HTTP header indicates where in a full body message a partial message belongs.
+                    For example Content-Range: bytes 200-1000/67589 </li>
+            </ul>
+            
+        </div>
+        <div>
+            <h1>Encryption of data in transit</h1>
+            <p> It means transmit data via the hypertext transfer protocol.
+                If a URL begins with 'https' though, it means that the HTTP protocol is actually within another protocol - TLS.
+                TLS encrypts connections (and the data within them), so you can have your HTTP requests and responses happening without 
+                the risk of someone reading (or changing) them along the way.When we are getting an SSL certificate for our website,
+                which means we actually getting a TLS certificate!</p>
+            <p>To transmit data with an encrepted format first an SSL certificate is required. and secondly set
+                 Strict-Transport-Security HTTP header to make https mandatory.
+            </p>   
+        </div>
+        <div>
+            <h1>Security features that are a result of not doing things</h1>
+            <p>When visiting a website that asks for sensitive information such as credit card numbers or social security number, 
+                the first step is to take to securing privacy is creating a strong password.Make sure that the website is encrypted over a secure connection.</p>
+            <p>Most browsers have sophisticated filters that can identify and warn of potential security threats.</p>   
+        </div>
+        <div>
+            <h1>Security Principles</h1>
+            <ul>
+                <li>Authentication : The authentication process verifies that you are who you claim to be.
+                    Identity is verified based on the credentials that we present, such as username/password,digital certificate.</li>
+                <li>Granting access to specific resources based on an authenticated user.</li>
+                <li>Auditing : A record that confidently shows that what has been happening.</li>
+            </ul>
+            <p>When visiting a website that asks for sensitive information such as credit card numbers or social security number, 
+                the first step is to take to securing privacy is creating a strong password.Make sure that the website is encrypted over a secure connection.</p>
+            <p>Most browsers have sophisticated filters that can identify and warn of potential security threats.</p>   
+        </div>
+       
+    </body>
+</html>
